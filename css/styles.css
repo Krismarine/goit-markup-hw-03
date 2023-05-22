@@ -3,6 +3,21 @@ body {
     background-color:#FFFFFF;  
     color: var(--primary-text-color)
 }
+
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
 :root {
     --light-cloud-color:#F4F4FD;
     --background-color:#FFFFFF;
@@ -12,10 +27,21 @@ body {
     --primary-text-color:#434455;
     --pressed-state-color:#404BBF;
     --active-navigation-color:#9747FF;
+    --cards-gap:24px;
 }
 
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+.section{
+    padding-left: 156px;
+    padding-right: 156px;
+}
 
 /* LOGO */
+
+
 .link-logo {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -28,15 +54,31 @@ body {
     color: var(--primary-brand-color);
 
 }
-.link {
+
+a {
     text-decoration: none;
 }
 .logo-studio {
     color: var(--title-color);
 }
 /* HEADER*/
-.list {
-    list-style: none;
+
+
+.header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    border-color: var(--borders-accent-color);
+}
+
+.container-nav{
+    display: flex;
+}
+
+.list-header{
+    display: flex;
 }
 
 .link-header {
@@ -46,32 +88,42 @@ body {
     /* identical to box height, or 150% */
     letter-spacing: 0.02em;
     color:var(--title-color);
-
+    margin-left: 24px;
 }
+
 .link-header:hover , .link-header:focus {
     color: var(--pressed-state-color);
 }
 .address {
     font-style: normal;
 }
-
+.list-address{
+    display: flex;
+}
 .link-address {
     line-height: 1.5;
     /* identical to box height, or 150% */
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-shadow: var(--borders-accent-color);
+    margin-left: 24px;
 }
 .link-address:hover , .link-address:focus {
     color: var(--pressed-state-color);
 }
 
 
-
 /* MAIN PAGE */
 
 .hero {
     background-color: var(--title-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+}
+.container-hero{
+    width: 1440px;
+    margin: 0 auto;
 }
 .title-hero {
     font-weight: 700;
@@ -79,8 +131,9 @@ body {
     line-height: 1.07;
     /* or 107% */
     letter-spacing: 0.02em;
-    text-align: center;
     color: var(--background-color);
+    margin-bottom: 48px;
+   
 }
 .order-btn {
     font-family: 'Roboto', sans-serif;
@@ -91,6 +144,9 @@ body {
     letter-spacing: 0.04em;
     color: var(--background-color);
     background-color: var(--primary-brand-color);
+    border-radius: 4px;
+    min-width: 169px;
+    padding: 16px 32px;
 }
 
 .order-btn:hover , .order-btn:focus {
@@ -98,6 +154,22 @@ body {
     cursor: pointer;
 }
 
+/*FEATURES*/
+
+.features{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.list-features{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--cards-gap));
+
+}
+.list-features-item{
+  margin-left: var(--cards-gap);
+  flex-basis: calc(100%/ 4 - var(--cards-gap));
+}
 .subject {
     font-weight: 500;
     font-size: 20px;
@@ -105,6 +177,7 @@ body {
     /* identical to box height, or 120% */
     letter-spacing: 0.02em;
     color: var(--title-color);
+    margin-bottom: 8px;
 }
 .text {
     font-weight: 400;
@@ -113,6 +186,9 @@ body {
     /* or 150% */
     letter-spacing: 0.02em;
 }
+
+/*What are we doing*/
+
 .title-images {
     font-size: 36px;
     line-height: 1.11;
@@ -121,10 +197,25 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color);
+    margin-bottom: 72px;
 }
+.container-images{
+    padding-bottom: 120px;
+}
+.list-images{
+    display: flex;
+    margin-left: calc(-1 * var(--cards-gap));
+}
+.list-images-item{
+    margin-left: var(--cards-gap);
+}
+
+/*Our team*/
 
 .container-team--cards{
     background-color: var(--light-cloud-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .title-team {
     font-size: 36px;
@@ -134,12 +225,23 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color);
+    padding-bottom: 72px;
 }
-
+.list-team{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--cards-gap));
+}
 .list-team-item {
     background-color: var(--background-color);
+    margin-left: var(--cards-gap);
+    flex-basis: calc(100%/ 4 - var(--cards-gap));
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 var(--title-color);
 }
-
+.caption-img{
+    padding: 32px;
+}
 .title-name {
     font-weight: 500;
     font-size: 20px;
@@ -148,6 +250,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    margin-bottom: 8px;
 }
 .position {
     font-size: 16px;
@@ -162,6 +265,8 @@ body {
 
 .footer {
     background-color: var(--title-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-footer-studio {
@@ -169,10 +274,16 @@ body {
 }
 .footer-text {
     color: var(--light-cloud-color);
+    margin-top: 16px;
 }
 /* PORTFOLIO PAGE */
 
-
+.container-filters{
+    padding-top: 102px;
+    padding-bottom: 72px;
+    display: flex;
+    justify-content: center;
+}
 .filter-item {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -183,6 +294,11 @@ body {
     letter-spacing: 0.04em;
     color: var(--primary-brand-color);
     background-color: var(--light-cloud-color);
+    border-radius: 4px;
+    border-color:  var(--borders-accent-color) ;
+    padding: 12px 24px;
+    margin-left: var(--cards-gap);
+    min-width: 69px;
 }
 .filter-item:hover , .filter-item:focus {
     background-color: var(--pressed-state-color);
@@ -190,6 +306,21 @@ body {
     cursor: pointer;
 }
 
+.product-set {
+    padding-bottom: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--cards-gap));
+    margin-top: -48px;
+}
+
+.product-item {
+    margin-top: 48px;
+    margin-left: var(--cards-gap);
+    flex-basis: calc(100% / 3 -  var(--cards-gap));
+    border: 1px solid;
+    border-color: var(--borders-accent-color);
+}
 .title-product {
    font-weight: 500;
     font-size: 20px;
@@ -204,4 +335,8 @@ body {
     /* identical to box height, or 150% */
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    margin-top: 8px;
+}
+.caption-product{
+    padding: 32px 0 32px 16px;
 }
