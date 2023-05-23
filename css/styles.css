@@ -355,7 +355,7 @@ a {
    
 }
 
-.product-item:nth-last-child(-n+3){
+.product-item:nth-last-child(-3n){
     margin-bottom: 0;
 }
 
