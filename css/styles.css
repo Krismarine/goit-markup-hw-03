@@ -41,6 +41,7 @@ img{
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 24px;
+    width: 1158px;
 }
 .section{
     padding-left: 156px;
@@ -251,7 +252,7 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .list-team{
     display: flex;
@@ -260,8 +261,8 @@ a {
 .list-team-item {
     background-color: var(--background-color);
     margin-right: var(--cards-gap);
-    flex-basis: calc(100%/ 4 - var(--cards-gap));
-    border-radius: 4px;
+    flex-basis: calc((100% - 3 * var(--cards-gap))/ 4);
+    border-radius:0 0 4px 4px;
     box-shadow: 0 1px 1px 0 var(--title-color);
 }
 .list-team-item:last-child{
