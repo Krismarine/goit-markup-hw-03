@@ -140,6 +140,7 @@ a {
     /* or 107% */
     letter-spacing: 0.02em;
     color: var(--background-color);
+    margin-bottom: 48px;
 }
 .order-btn {
     font-family: 'Roboto', sans-serif;
