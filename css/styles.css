@@ -39,14 +39,9 @@ img{
 .container-header{
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
     width: 1158px;
 }
-/* .section{
-    padding-left: 156px;
-    padding-right: 156px;
-} */
+
 /* LOGO */
 
 
@@ -94,6 +89,9 @@ a {
     /* identical to box height, or 150% */
     letter-spacing: 0.02em;
     color:var(--title-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 }
 
 .link-header:last-child{
@@ -116,6 +114,9 @@ a {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-shadow: var(--borders-accent-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 }
 .link-address:hover , .link-address:focus {
     color: var(--pressed-state-color);
