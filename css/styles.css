@@ -31,7 +31,7 @@ img{
 }
 
 .container{
-    width: 1470px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -43,10 +43,10 @@ img{
     padding-bottom: 24px;
     width: 1158px;
 }
-.section{
+/* .section{
     padding-left: 156px;
     padding-right: 156px;
-}
+} */
 /* LOGO */
 
 
@@ -173,6 +173,7 @@ a {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .visually-hidden{
   position: absolute;
   width: 1px;
@@ -233,7 +234,7 @@ a {
 }
 .list-images-item{
   margin-right: var(--cards-gap);
-  flex-basis: calc((100% - 2 * var(--cards-gap))/ 3);
+  width: calc((100% - 2 * var(--cards-gap))/ 3);
 }
 .list-images-item:last-child{
     margin-right: 0;
@@ -262,7 +263,7 @@ a {
 .list-team-item {
     background-color: var(--background-color);
     margin-right: var(--cards-gap);
-    flex-basis: calc((100% - 3 * var(--cards-gap))/ 4);
+    width: calc((100% - 3 * var(--cards-gap))/ 4);
     border-radius:0 0 4px 4px;
     box-shadow: 0 1px 1px 0 var(--title-color);
 }
