@@ -310,6 +310,8 @@ a {
 .footer-text {
     color: var(--light-cloud-color);
     max-width: 264px;
+    font-size: 16px;
+    line-height: 1.5; /* 24/16 */
    
 }
 /* PORTFOLIO PAGE */
